@@ -9,14 +9,17 @@ import {
   Colors
 } from 'react-native/Libraries/NewAppScreen';
 
-import {Home} from './src/home/HomeTest'
+import {EnthuTest} from './src/home/EnthusiasmTest'
+import {Enthu} from './src/home/Enthusiasm'
 
 declare const global: {HermesInternal: null | {}};
 
 const App = () => {
   return (
     <View>
-      <Home name="mads" enthusiasmLevel={1}/>
+      <EnthuTest name="mads" enthusiasmLevel={1}/>
+      <Enthu name="test" enthusiasmLevel={1} />
+      
     </View>
   );
 };

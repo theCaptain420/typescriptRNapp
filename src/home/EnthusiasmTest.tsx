@@ -13,7 +13,7 @@ interface State {
   enthusiasmLevel: number
 }
 
-export class Home extends React.Component<Props, State> {
+export class EnthuTest extends React.Component<Props, State> {
   constructor(props: Props) {
     super(props)
 
