@@ -8,6 +8,8 @@ import CustomEnterText from "./CustomEnterText"
 export interface Props{
     favoriteNumber:number
     name?:string
+    onNameChange?: () => void
+
 }
 
 interface State{
@@ -16,6 +18,8 @@ interface State{
 }
 
 export default class EnterMyName extends React.Component<Props,State>{
+
+
     //takes in props of type Props
     constructor(props:Props){
         super(props)
@@ -28,13 +32,16 @@ export default class EnterMyName extends React.Component<Props,State>{
         }
     }
 
+    onNameChange = (newName:string) => this.setState({ name: newName });
+
+
     render(){
         return(
             <View>
                 <Text style={styles.header}>
                     Hello {this.state.name}
                 </Text>
-                <CustomEnterText/>
+                <CustomEnterText />
             </View>
         )
     }

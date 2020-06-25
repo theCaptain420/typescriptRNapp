@@ -1,9 +1,14 @@
 import { View, Text, StyleSheet, TextInput } from "react-native";
 import React from 'react'
 
+interface InputProps{
+    value:string
+    onChange:()=>void
+}
 
-export default function () {
+export default function (Props:InputProps) {
 
+    Props.value
     return(
         <View >
             <TextInput
