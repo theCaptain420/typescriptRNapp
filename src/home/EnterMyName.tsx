@@ -25,6 +25,24 @@ export default class EnterMyName extends React.Component<Props,State>{
         }
     }
 
-    
+    render(){
+        return(
+            <View>
+                <Text style={styles.header}>
+                    Hello {this.state.name}
+                </Text>
+            </View>
+        )
+    }
 
 }
+
+
+const styles = StyleSheet.create({
+    header: {
+      alignSelf:"center",
+      fontSize:15,
+      fontWeight:"bold"
+
+    },
+  })
