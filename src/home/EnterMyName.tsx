@@ -1,6 +1,9 @@
 import React from "react"
 import { Button, StyleSheet, Text, View } from "react-native"
 
+import EnterText from './CustomEnterText'
+import CustomEnterText from "./CustomEnterText"
+
 //props, ? means not required
 export interface Props{
     favoriteNumber:number
@@ -31,6 +34,7 @@ export default class EnterMyName extends React.Component<Props,State>{
                 <Text style={styles.header}>
                     Hello {this.state.name}
                 </Text>
+                <CustomEnterText/>
             </View>
         )
     }
