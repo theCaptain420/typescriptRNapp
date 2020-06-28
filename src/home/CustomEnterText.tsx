@@ -3,17 +3,17 @@ import React from 'react'
 
 interface InputProps{
     value:string
-    onChange:()=>void
+    onChange:(name:string)=>void
 }
 
 export default function (Props:InputProps) {
 
-    Props.value
     return(
         <View >
             <TextInput
                 style={styles.inputboxStyle}
-                value={"tsm"}
+                value={Props.value}
+                onChangeText={Props.onChange}
             />
         </View>
     )
