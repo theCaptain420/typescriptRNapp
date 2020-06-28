@@ -41,7 +41,7 @@ export default class EnterMyName extends React.Component<Props,State>{
                 <Text style={styles.header}>
                     Hello {this.state.name}
                 </Text>
-                <CustomEnterText />
+                <CustomEnterText value={this.state.name} onChange={this.onNameChange}/>
             </View>
         )
     }
