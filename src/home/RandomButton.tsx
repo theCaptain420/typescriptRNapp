@@ -14,7 +14,6 @@ export function RandomButton(){
                 title={"skrrt"}
                 color={"#f194ff"}
             >
-
             </Button>
 
         </View>
