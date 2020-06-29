@@ -11,7 +11,7 @@ export function RandomButton(){
         <View style={{margin:"5%"}}>
             <Button
                 onPress={myOnPress}
-                title={"skrrt"}
+                title={"Skrrt"}
                 color={"#f194ff"}
             >
             </Button>
